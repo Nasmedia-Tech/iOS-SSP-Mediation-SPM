@@ -6,11 +6,23 @@ let package = Package(
     products: [
         .library(name: "AdMixerMediation", targets: ["AdMixerMediation"]),
     ],
+    dependencies: [
+        .package(
+            url: "https://github.com/Nasmedia-Tech/iOS-SSP-SPM.git", exact: "1.0.8"
+        )
+    ],
     targets: [
         .binaryTarget(
             name: "AdMixerMediation",
             url: "https://github.com/Nasmedia-Tech/iOS-SSP-Mediation-SPM/raw/main/AdMixerMediation2.0.5.xcframework.zip",
             checksum: "865a4a6c1e9a89c805e2089956b43d45ed7f533c1308dc484dc60870b096cb76"
+        ),
+        .target(
+            name: "AdMixerMediationWrapper",
+            dependencies: [
+                "AdMixerMediation",
+                .product(name: "AdMixer", package: "AdMixer"),
+            ]
         ),
     ]
 )
