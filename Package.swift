@@ -4,11 +4,13 @@ let package = Package(
     name: "AdMixerMediation",
     platforms: [.iOS(.v13)],
     products: [
-        .library(name: "AdMixerMediation", targets: ["AdMixerMediation"]),
+        .library(
+            name: "AdMixerMediation",
+            targets: ["AdMixerMediation"]),
     ],
     dependencies: [
         .package(
-            name: "AdMixer",
+            name: "ios-ssp-spm",
             url: "https://github.com/Nasmedia-Tech/iOS-SSP-SPM.git",
             exact: "1.0.8"
         )
@@ -23,7 +25,9 @@ let package = Package(
             name: "AdMixerMediationWrapper",
             dependencies: [
                 "AdMixerMediation",
-                .product(name: "AdMixer", package: "AdMixer"),
+                .product(
+                    name: "AdMixer",
+                    package: "ios-ssp-spm"),
             ]
         ),
     ]
