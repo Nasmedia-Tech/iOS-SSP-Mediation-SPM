@@ -10,7 +10,6 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            name: "ios-ssp-spm",
             url: "https://github.com/Nasmedia-Tech/iOS-SSP-SPM.git",
             exact: "1.0.8"
         )
