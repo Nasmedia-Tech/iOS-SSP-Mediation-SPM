@@ -8,7 +8,9 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/Nasmedia-Tech/iOS-SSP-SPM.git", exact: "1.0.8"
+            name: "AdMixer",
+            url: "https://github.com/Nasmedia-Tech/iOS-SSP-SPM.git",
+            exact: "1.0.8"
         )
     ],
     targets: [
