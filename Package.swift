@@ -11,8 +11,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AdMixerMediation",
-            url: "https://github.com/Nasmedia-Tech/iOS-AdMixerDownload/raw/main/AdMixerMediation2.1.8-release.xcframework.zip",
-            checksum: "ac397d4d5a6e96e1ae738ac3a4a23e4c36ddb39b6215fab4f70d53dbad699c84"
+            url: "https://github.com/Nasmedia-Tech/iOS-AdMixerDownload/raw/main/AdMixerMediation2.1.9.xcframework.zip",
+            checksum: "364484ead24fa904dde282a2d834b187664349a4e9ee8cb00eb3ada72c8288c7"
         ),
     ]
 )
